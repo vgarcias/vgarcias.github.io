@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Smooth Scroll Foundation</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.css" />
+    <script src="http://cdn.jsdelivr.net/foundation/5.0.2/js/modernizr.js"></script>
+	<style type="text/css">
+	.page-section {padding-top:20px;min-height:650px;border-top:solid 2px gray}
+	.page-section-first {padding-top:60px;}
+	.page-divider {min-height:100px;}
+	</style>
+  </head>
+  <body><a name="home"></a>
+	<div class="row">
+		<div class="large-12>
+			<div id="slider">
+				<ul class="example-orbit" data-orbit>
+				  <li>
+					<img src="http://placehold.it/1000x400&text=[ img 1 ]" alt="slide 1" />
+					<div class="orbit-caption">
+					  Caption One.
+					</div>
+				  </li>
+				  <li>
+					<img src="http://placehold.it/1000x400&text=[ img 2 ]" alt="slide 2" />
+					<div class="orbit-caption">
+					  Caption Two.
+					</div>
+				  </li>
+				  <li>
+					<img src="http://placehold.it/1000x400&text=[ img 3 ]" alt="slide 3" />
+					<div class="orbit-caption">
+					  Caption Three.
+					</div>
+				  </li>
+				</ul>	  
+			</div>
+		<div class="large-12 columns panel">
+			<h1>Bienvenido a Foundation</h1>
+			<div class="text-center">
+				<ul class="button-group">
+				  <li data-magellan-arrival="section-1"><a class="magellan-link button" href="#section-1">ir a sitio</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		
+	</div>
+   
+   <div class="magellan" data-magellan-expedition>
+		<div class="row" id="nav-menu">
+			<nav class="top-bar" data-topbar>
+			  <ul class="title-area">
+				<li class="name">
+				  <h1><a data-magellan-arrival="home1" class="magellan-link" href="#home">Mi Sitio</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			  </ul>
+
+			  <section class="top-bar-section">
+				<!-- Left Nav Section -->
+				<ul>
+				  <li data-magellan-arrival="section-1"><a class="magellan-link" href="#section-1">Empresa</a></li>
+				  <li data-magellan-arrival="section-2"><a class="magellan-link" href="#section-2">Servicios</a></li>
+				  <li data-magellan-arrival="section-3"><a class="magellan-link" href="#section-3">Productos</a></li>
+				  <li data-magellan-arrival="section-4"><a class="magellan-link" href="#section-4">Contacto</a></li>
+				  </li>
+				</ul>
+
+			  </section>
+			</nav>
+		</div>
+	</div>
+	
+	<div class="row page-section">
+		<div class="large-12 columns">	
+			<h2 id="section-1" class="page-section-first" data-magellan-destination="section-1">Empresa</h2>
+		</div>	
+	</div>
+
+	<div class="row page-section">
+		<div class="large-12 columns">
+			<h2 id="section-2" data-magellan-destination="section-2">Servicios</h2>
+		</div>	
+	</div>
+
+	<div class="row page-section">
+		<div class="large-12 columns">
+			<h2 id="section-3" data-magellan-destination="section-3">Productos</h2>
+		</div>	
+	</div>
+	
+	<div class="row page-section">
+		<div class="large-12 columns">
+			<h2 id="section-4" data-magellan-destination="section-4">Contacto</h2>
+		</div>	
+	</div>
+	
+    <script src="http://cdn.jsdelivr.net/foundation/5.0.2/js/jquery.js"></script>
+	<script src="http:////cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.13/jquery.smooth-scroll.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/foundation/5.0.2/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+	  $("a.magellan-link").smoothScroll({offset: -60, speed:1000});	  
+    </script>
+  </body>
+</html>
